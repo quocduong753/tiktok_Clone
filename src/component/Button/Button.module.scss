@@ -1,0 +1,97 @@
+.wrapper {
+    font-family: 'IBM Plex Sans', ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 100px;
+    min-height: 36px;
+    padding: 6px 8px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    color: var(--black-text-color);
+    text-decoration: none;
+    cursor: pointer;
+
+    + .wrapper {
+        margin-left: 16px;
+    }
+
+    &.disable {
+        pointer-events: none;
+        opacity: 0.6;
+        user-select: none;
+    }
+}
+
+.title + .icon,
+.icon + .title {
+    margin-left: 8px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.rounded {
+    border-radius: 999px !important;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary-color);
+
+    &:hover {
+        border-color: var(--primary-color);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+
+.outlinePrimary {
+    color: var(--primary-color);
+    border-color: rgba(254, 44, 85, 1);
+
+    &:hover {
+        border-color: rgba(254, 44, 85, 1);
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+
+.outline {
+    color: var(--black-text-color);
+    border-color: rgba(22, 24, 35, 0.12);
+    font-weight: 600;
+    border-radius: 2px;
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.12);
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.small {
+    min-width: 88px;
+    min-height: 28px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.large {
+    min-width: 140px;
+    min-height: 48px;
+}
+
+.p16 {
+    padding: 0 16px;
+}
+
+.custom {
+    color: rgba(22, 24, 35, 0.75);
+}

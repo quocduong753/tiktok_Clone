@@ -3,10 +3,16 @@
 
 :root {
     --primary-color: #fe2c55;
+    --black-text-color: rgb(22, 24, 35);
+    --default-layout-header-height: 60px;
+    --default-layout-header-width: 1150px;
+    --white: #fff;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -19,4 +25,5 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    color: rgba(22, 24, 35, 1);
 }
